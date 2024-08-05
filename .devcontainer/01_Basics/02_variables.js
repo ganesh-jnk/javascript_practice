@@ -7,9 +7,11 @@ accountName="Umesh"
 
 // const, let, var, and directly variable name we can give 
 // const we can't change. 
-// var functional scope(ex if declared in if block then outside if also accessible) 
-// let block scope(ex if declared in if block then outside if not accessible)
-
+// var Function-scoped. A variable declared with var is accessible throughout the entire function
+//  in which it is declared.
+// let Block-scoped. A variable declared with let is only accessible within the block 
+// in which it is declared (e.g., inside a loop, conditional, or function). 
+// This allows for better encapsulation and helps prevent unintended variable leaks.
 console.log(accountId)
 console.table([accountId,accountMail,accountName,accountNumber])
 
@@ -59,3 +61,6 @@ let myObj={myname:"Ganehs",
     age:25,
 };
 console.log(typeof myObj)
+
+let myName="Ganesh"
+
